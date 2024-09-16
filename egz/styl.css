@@ -1,0 +1,59 @@
+h2{
+    letter-spacing: 7px;
+    text-transform: capitalize;
+}
+body{
+    font-family: Tahoma;
+}
+.main{
+    margin: 7px;
+    background: crimson;
+}
+header{
+    height: 370px;
+    color: white;
+    text-align: center;
+}
+#main{
+    background: whitesmoke;
+    position: relative;
+    width: 100%;
+    height: 50px;
+}
+#main > h2{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#right{
+    float: right;
+    width: 30%;
+    background-color: whitesmoke;
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;  
+}
+#right > img{
+    width: 150px;
+    height: auto;
+}
+#left {
+    width: 70%;
+    height: 230px;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;  
+}
+.gra{
+    color: white;
+    text-align: center;
+    width: 200px;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.gra_c .gra:hover{
+    border: 1px solid white;
+}
