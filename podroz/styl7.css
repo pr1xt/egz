@@ -1,0 +1,54 @@
+body{
+    font-family: Helvetica;
+    margin:0px;
+    background-color:  rgb(70, 130, 180);
+}
+header, footer {
+    background-color: rgb(70, 130, 180);
+    color: white;
+    height: 30px;
+    text-align: center;
+}
+header > h2{
+    margin-top: 0px;
+}
+main{
+    background-color: rgb(76, 196, 222);
+    padding: 50px;
+    text-align: center;
+}
+.side_block{
+    background-color: rgb(70, 130, 180);
+    color: white;
+    padding: 50px;
+    height: 300px;
+}
+#side_blocks{
+    display: flex;
+    flex-direction: row;
+}
+#right_b{
+    width: 20%;
+}
+#left_b{
+    width: 80%;
+}
+main > img{
+    margin: 3px;
+    border: 1px dashed blue;
+    border-radius: 10px;
+}
+.images{
+    height: 40%;
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+    
+}
+#images > img {
+    height: 100%;
+    object-fit: fill;
+}
+.image:hover{
+    border: 1px white solid;
+}

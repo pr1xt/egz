@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria</title>
+    <link rel="stylesheet" href="styl7.css">
+</head>
+<body>
+    <header>
+        <h2>Galeria miejsc ciekawych</h2>
+    </header>
+    <main>
+        <img id="gal" src="lanzarotte.jpg" alt="galeria">
+    </main>
+    <div id="side_blocks">
+        <div class="side_block" id="left_b">
+            <h3>Przeglądaj zdjęcia</h3>
+            <div id="images">
+                <img src="lanzarotte.jpg" alt="lanzarotte" class="image" onclick="change_pic('lanzarotte.jpg')">
+                <img src="pekin.jpg" alt="pekin" class="image" onclick="change_pic('pekin.jpg')">
+                <img src="res.jpg" alt="serengeti" class="image" onclick="change_pic('res.jpg')">
+                <img src="wenecja.jpg" alt="wenecja" class="image" onclick="change_pic('wenecja.jpg')">
+                <img src="tajlandia.jpg" alt="tajlandia" class="image" onclick="change_pic('tajlandia.jpg')">
+            </div>
+        </div>
+        
+        <div class="side_block" id="right_b">
+            <h3>Obrazy w naszej galerii</h3>
+            <table>
+                <tr><th>Europa</th> <th>Azja</th><th>Afryka</th></tr>
+                <tr><th>2</th> <th>2</th><th>1</th></tr>
+            </table>
+            <div class="media">
+                <p>Polub nas<img id='like' src="icon-off.png" onclick="f_like()"></p>    
+                <a href="https://pixabay.com" target="_blank">Odkryj więcej zdjęć </a>
+            </div>
+        </div>
+    </div>
+    <footer>
+
+    </footer>
+    <script>
+        const like = document.getElementById("like");
+        const main_pic = document.getElementById("gal");
+        let liked = 0;
+
+
+        function change_pic(arg){
+            main_pic.src = arg;
+        }
+
+        function f_like(){
+            if(liked == 0){
+                like.src = "icon-on.png"
+                liked = 1;
+                console.log(liked)
+            }else if(liked == 1){
+                like.src = "icon-off.png"
+                liked = 0;
+                console.log(liked)
+            }
+        }
+    </script>
+</body>
+</html>
