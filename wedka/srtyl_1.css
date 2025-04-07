@@ -1,0 +1,39 @@
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: dodgerblue;
+    margin: 0px;
+
+}
+header{
+    background-color: dodgerblue;
+    color: white;
+    margin:10px;
+    text-align: center;
+}
+main{
+    background-color: lightblue;
+    padding: 100px;
+}
+footer{
+    display: flex;
+    flex-direction: row;
+}
+footer > div{
+    background-color: dodgerblue;
+    height: 220px;
+    color: white;
+    width: 40%;
+
+}
+.b_left{
+    width: 20%;
+}
+.b_right{
+    text-align: center;
+}
+.btn{
+    border: 1px dimgray dashed;
+    background-color: gold;
+    color: darkred;
+    padding: 10px;
+}
